@@ -28,7 +28,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <nav class="nav split">
         <img src="/images/logo.svg" alt="">
@@ -41,46 +41,48 @@
     </div>
   </header>
 
-  <section class="text-center">
+  <section class="section__intro text-center">
     <div class="container">
       <img src="./images/illustration-intro.png" alt="intro">
-      <div class="page__info">
-        <h2 class="page__title">All your files in one secure location, accessible anywhere.</h2>
-        <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+      <div class="intro__wrapper flow-content">
+        <h2 class="intro__title">All your files in one secure location, accessible anywhere.</h2>
+        <p class="intro__sub">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
         <a href="#" class="btn btn-accent">Get Started</a>
       </div>
     </div>
   </section>
 
-  <div class="container text-center">
-    <ul class="flow-content--lg">
-      <li class="flow-content">
-        <img src="./images/icon-access-anywhere.svg" alt="Access Icon">
-        <h3 class="text-700">Access your files, anywhere</h3>
-        <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
-      </li>
-      <li class="flow-content">
-        <img src="./images/icon-security.svg" alt="Access Icon">
-        <h3 class="text-700">Security you can trust</h3>
-        <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
-      </li>
-      <li class="flow-content">
-        <img src="./images/icon-collaboration.svg" alt="Access Icon">
-        <h3 class="text-700">Real-time collaboration</h3>
-        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      </li>
-      <li class="flow-content">
-        <img src="./images/icon-any-file.svg" alt="Access Icon">
-        <h3 class="text-700">Store any type of file</h3>
-        <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
-      </li>
-    </ul>
-  </div>
-
-  <section>
+  <section class="section__info  text-center">
     <div class="container">
+      <ul class="flow-content--lg grid">
+        <li class="flow-content">
+          <img src="./images/icon-access-anywhere.svg" alt="Access Icon">
+          <h3 class="text-700">Access your files, anywhere</h3>
+          <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+        </li>
+        <li class="flow-content">
+          <img src="./images/icon-security.svg" alt="Access Icon">
+          <h3 class="text-700">Security you can trust</h3>
+          <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+        </li>
+        <li class="flow-content">
+          <img src="./images/icon-collaboration.svg" alt="Access Icon">
+          <h3 class="text-700">Real-time collaboration</h3>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        </li>
+        <li class="flow-content">
+          <img src="./images/icon-any-file.svg" alt="Access Icon">
+          <h3 class="text-700">Store any type of file</h3>
+          <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section__about">
+    <div class="container about__wrapper split">
       <img src="./images/illustration-stay-productive.png" alt="illustration">
-      <div class="flow-content">
+      <div class=" flow-content">
         <h2 class="section__title">Stay productive, wherever you are</h2>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
@@ -90,8 +92,8 @@
   </section>
 
   <section class="testimonial">
-    <div class="container">
-      <ul class="testimonials flow-content">
+    <div class="container testimonials">
+      <ul class="testimonials__wrapper">
         <li class="testimonial__card bg-lighter">
           <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
           <footer>
@@ -129,22 +131,43 @@
     </div>
   </section>
 
-  <section class="call-to-action text-center">
+  <section class="cta text-center">
     <div class="container">
-      <h2>Get early access today</h2>
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-      <form action="">
-        <input type="text">
-        <button type="submit" class="btn">Get Started For Free</button>
-      </form>
+      <div class="cta__wrapper ">
+        <div class="flow-content">
+          <h2>Get early access today</h2>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </div>
+        <form action="" class="cta__form">
+          <input type="text" placeholder="email@example.com">
+          <button type="submit" class="btn btn-accent m-space">Get Started For Free</button>
+        </form>
+      </div>
     </div>
   </section>
  
   <footer class="footer bg-darker">
     <div class="container">
       <img src="./images/logo.svg" alt="Fylo Logo">
+
+      <address class="flow-content">
+        <div class="footer__location text-500 split">
+          <img src="/images/icon-location.svg" alt="icon location">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+
+        <div class="footer__number split">
+          <img src="/images/icon-phone.svg" alt="icon location">
+          <p><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
+        </div>
+
+        <div class="footer__mail split">
+          <img src="/images/icon-email.svg" alt="icon location">
+          <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
+        </div>
+      </address>
   
-      <ul class="footer__nav">
+      <ul class="footer__nav text-500 flow-content">
         <li><a href="#">About Us</a></li>
         <li><a href="#">Jobs</a></li>
         <li><a href="#">Press</a></li>
@@ -154,30 +177,13 @@
         <li><a href="#">Privacy</a></li>
       </ul>
   
-      <ul class="footer__social">
-        <li><a href="https://facebook.com/" aria-label="facebook home page"><i class="fab fa-facebook-square fa-lg"></i></a></li>
-        <li><a href="https://twitter.com/"  aria-label="twitter home page"><i class="fab fa-twitter fa-lg"></i></a></li>
-        <li><a href="https://instagram.com/" aria-label="instagram home page"><i class="fab fa-instagram fa-lg"></i></a></li>
+      <ul class="footer__social split">
+        <li><a href="https://facebook.com/" aria-label="facebook home page"><i class="fab fa-facebook-square fa-300"></i></a></li>
+        <li><a href="https://twitter.com/"  aria-label="twitter home page"><i class="fab fa-twitter fa-300"></i></a></li>
+        <li><a href="https://instagram.com/" aria-label="instagram home page"><i class="fab fa-instagram fa-300"></i></a></li>
       </ul>
     </div>
   </footer>
-
-
-
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-
- 
- 
- 
-
-
-
 
   <footer>
     <p class="attribution">
