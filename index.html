@@ -28,13 +28,15 @@
   </style>
 </head>
 <body>
-  <nav class="nav split">
-    <img src="/images/logo.svg" alt="">
-    <ul class="nav__list split">
-      <li class="nav__list-item"><a href="#">Features</a></li>
-      <li class="nav__list-item"><a href="#">Team</a></li>
-      <li class="nav__list-item"><a href="#">Sign In</a></li>
-    </ul>
+  <nav class="nav">
+    <div class="nav__container split">
+      <a href="#"><img src="/images/logo.svg" alt=""></a>
+      <ul class="nav__list split">
+        <li class="nav__list-item"><a href="#">Features</a></li>
+        <li class="nav__list-item"><a href="#">Team</a></li>
+        <li class="nav__list-item"><a href="#">Sign In</a></li>
+      </ul>
+    </div>
   </nav>
 
   <section class="intro text-center">
@@ -82,10 +84,10 @@
   </section>
 
   <section class="testimonial">
-    <div class="testimonial__wrapper split">
+    <div class="testimonial__container split flow-content">
       <article class="testimonial__card bg-lighter">
         <blockquote>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
-        <footer class="profile">
+        <footer class="testimonial__profile">
           <img src="./images/profile-1.jpg" alt="Satish Profile">
           <div>
             <h4>Satish Patel</h4>
@@ -97,7 +99,7 @@
       <article class="testimonial__card bg-lighter">
         <blockquote>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
           become a well-oiled collaboration machine.</blockquote>
-        <footer class="profile">
+        <footer class="testimonial__profile">
           <img src="./images/profile-2.jpg" alt="Bruce Profile">
           <div>
             <h4>Bruce McKenzie</h4>
@@ -108,7 +110,7 @@
 
       <article class="testimonial__card bg-lighter">
         <blockquote>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
-        <footer class="profile">
+        <footer class="testimonial__profile">
           <img src="./images/profile-3.jpg" alt="Iva Profile">
           <div>
             <h4>Iva Boyd</h4>
@@ -120,44 +122,42 @@
   </section>
 
   <section class="cta text-center">
-    <div class="container">
-      <div class="cta__wrapper ">
-        <div class="cta__content">
-          <div class="flow-content">
-            <h2>Get early access today</h2>
-            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-          </div>
-          <form action="" class="cta__form split">
-            <input type="text" placeholder="email@example.com">
-            <button type="submit" class="btn btn-accent m-space">Get started for free</button>
-          </form>
-        </div>
+    <div class="cta__container">
+      <div class="cta__content">
+        <header class="flow-content">
+          <h2>Get early access today</h2>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </header>
       </div>
+      <form action="" class="cta__form split">
+        <input type="text" placeholder="email@example.com">
+        <button type="submit" class="btn btn-accent m-space">Get started for free</button>
+      </form>
     </div>
   </section>
  
-  <footer class="footer bg-darker">
-    <div class="container">
-      <img src="./images/logo.svg" alt="Fylo Logo">
-
-      <address class="flow-content">
+  <footer class="footer">
+      <img src="./images/logo.svg" alt="Fylo Logo" class="footer__logo">
+      <address class="flow-content m-spacer">
         <div class="footer__location split">
           <img src="/images/icon-location.svg" alt="icon location">
           <p class="text-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
         </div>
 
-        <div class="footer__number split">
-          <img src="/images/icon-phone.svg" alt="icon location">
-          <p><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
-        </div>
-
-        <div class="footer__mail split">
-          <img src="/images/icon-email.svg" alt="icon location">
-          <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
+        <div>
+          <div class="footer__contact split">
+            <img src="/images/icon-phone.svg" alt="icon location">
+            <p><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
+          </div>
+  
+          <div class="footer__mail split">
+            <img src="/images/icon-email.svg" alt="icon location">
+            <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
+          </div>
         </div>
       </address>
   
-      <ul class="footer__nav text-500 flow-content">
+      <ul class="footer__nav flow-content text-500 m-spacer">
         <li><a href="#">About Us</a></li>
         <li><a href="#">Jobs</a></li>
         <li><a href="#">Press</a></li>
@@ -167,12 +167,11 @@
         <li><a href="#">Privacy</a></li>
       </ul>
   
-      <ul class="footer__social split">
+      <ul class="footer__social split m-spacer">
         <li><a href="https://facebook.com/" aria-label="facebook home page"><i class="fab fa-facebook-square fa-300"></i></a></li>
         <li><a href="https://twitter.com/"  aria-label="twitter home page"><i class="fab fa-twitter fa-300"></i></a></li>
         <li><a href="https://instagram.com/" aria-label="instagram home page"><i class="fab fa-instagram fa-300"></i></a></li>
       </ul>
-    </div>
   </footer>
 
   <footer>
