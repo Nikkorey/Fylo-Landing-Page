@@ -29,7 +29,7 @@
 </head>
 <body>
   <!-- Start of Header -->
-  <header class="header">
+  <header>
     <!-- Start of Navigation -->
     <nav class="nav split">
       <a href="#"><img src="/images/logo.svg" alt=""></a>
@@ -51,7 +51,6 @@
     <!-- End of Intro -->
   </header>
   <!-- End of Header -->
-
 
   <!-- Start of features -->
   <section class="features text-center spacer">
@@ -83,20 +82,20 @@
   <!-- Start of about -->
   <section class="about split spacer">
     <img src="./images/illustration-stay-productive.png" alt="illustration">
-    <header class="flow-content">
-      <h2 class="section__title">Stay productive, wherever you are</h2>
+    <header class="about__header flow-content">
+      <h2 class="about__title">Stay productive, wherever you are</h2>
       <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      <a href="#" class="btn">See how Fylo works</a>
+      <a href="#" class="btn">See how Fylo works      <img src="images/icon-arrow.svg" alt=""></a>
     </header>
   </section>
   <!-- end of about -->
 
   <!-- Start of  testimonial -->
-  <section class="testimonial">
-    <div class="testimonial__container split flow-content">
-      <article class="testimonial__card bg-lighter">
-        <blockquote>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
+  <div class="testimonial">
+    <div class="testimonial__container">
+      <article class="testimonial__card testimonial__card-quote bg-lighter">
+        <blockquote class="testimonial__quote">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</blockquote>
         <footer class="testimonial__profile">
           <img src="./images/profile-1.jpg" alt="Satish Profile">
           <div>
@@ -129,7 +128,7 @@
         </footer>
       </article>
     </div>
-  </section>
+  </div>
   <!-- End of  testimonial -->
  
   <div class="hero">
@@ -138,11 +137,11 @@
       <div class="cta__container">
         <div class="cta__content">
           <header class="flow-content">
-            <h2 class="section-title">Get early access today</h2>
-            <p class="subtitle">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+            <h2 class="cta__title">Get early access today</h2>
+            <p class="cta__subtitle">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
           </header>
         </div>
-        <form action="" class="cta__form split flow-content">
+        <form action="#" class="cta__form split flow-content">
           <input type="text" placeholder="email@example.com">
           <button type="submit" class="btn btn-accent m-space">Get Started For Free</button>
         </form>
@@ -155,35 +154,35 @@
       <div class="footer__container">
         <a href="#"><img src="./images/logo.svg" alt="Fylo Logo" class="footer__logo"></a>
         <div class="footer__grid">
-          <address class="address flow-content">
-            <div class="address__location split">
+          <address class="footer__address flow-content">
+            <div class="split">
               <img src="/images/icon-location.svg" alt="icon location">
               <p class="text-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
-            <div class="address__info flow-content">
-              <div class="address__info-contact">
+            <div class="footer__address-info flow-content">
+              <div class="split">
                 <img src="/images/icon-phone.svg" alt="icon location">
                 <p><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
               </div>
-              <div class="address__info-mail">
+              <div class="split">
                 <img src="/images/icon-email.svg" alt="icon location">
                 <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
               </div>
             </div>
           </address>
-          <ul class="footer__nav text-500">
-            <div class="flow-content">
+          <div class="footer__nav text-500">
+            <ul class="flow-content">
               <li><a href="#">About Us</a></li>
               <li><a href="#">Jobs</a></li>
               <li><a href="#">Press</a></li>
               <li><a href="#">Blog</a></li>
-            </div>
-            <div class="flow-content">
+            </ul>
+            <ul class="flow-content">
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Privacy</a></li>
-            </div>
-          </ul>
+            </ul>
+          </div>
           <ul class="footer__social">
             <li><a href="https://facebook.com/" aria-label="facebook home page"><i class="fab fa-facebook-square fa-300"></i></a></li>
             <li><a href="https://twitter.com/"  aria-label="twitter home page"><i class="fab fa-twitter fa-300"></i></a></li>
@@ -195,11 +194,11 @@
     <!-- End of footer -->
   </div>
 
-  <footer>
+  <div class="author">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Nikko Rey Hular</a>.
     </p>
-  </footer>
+  </div>
 </body>
 </html>
